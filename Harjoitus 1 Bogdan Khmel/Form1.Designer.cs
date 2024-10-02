@@ -28,12 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            OtsikkoLB = new Label();
+            button1 = new Button();
+            SuspendLayout();
+            // 
+            // OtsikkoLB
+            // 
+            OtsikkoLB.AutoSize = true;
+            OtsikkoLB.Font = new Font("Segoe UI", 14F);
+            OtsikkoLB.Location = new Point(53, 37);
+            OtsikkoLB.Name = "OtsikkoLB";
+            OtsikkoLB.Size = new Size(91, 38);
+            OtsikkoLB.TabIndex = 0;
+            OtsikkoLB.Text = "label1";
+            OtsikkoLB.Click += OtsikkoLB_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(43, 123);
+            button1.Name = "button1";
+            button1.Size = new Size(165, 67);
+            button1.TabIndex = 1;
+            button1.Text = "Vaihda teksti";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Controls.Add(OtsikkoLB);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label OtsikkoLB;
+        private Button button1;
     }
 }
