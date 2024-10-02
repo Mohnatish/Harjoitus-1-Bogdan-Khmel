@@ -14,7 +14,7 @@ namespace Harjoitus_1_Bogdan_Khmel
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OtsikkoLB.Text = "Heipp maailma";
+            OtsikkoLB.Text = "Heippa maailma";
         }
     }
 }
